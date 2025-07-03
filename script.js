@@ -1,5 +1,5 @@
 // Typing effect
-const text = "Hi, I'm Daniel Paul";
+const text = "Hi, I'm G.Ganesh";
 let i = 0;
 function typeEffect() {
   if (i < text.length) {
