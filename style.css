@@ -58,9 +58,10 @@ a {
 }
 
 .profile-pic{
-  width:150px;
-  height:150px;
+  width:100px;
+  height:100px;
   broder-radius:40%;
+  align-image:left;
   object-fit:cover;
   border: 3px solid 
 }
