@@ -1,27 +1,22 @@
 
-body{
-    background-image: url(background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
+//DIGITAL CLOCK PROJECT
+
+
+function updateClock(){
+
+    const now = new Date()
+    let hours = now.getHours()
+    const meridiem = hours >= 12 ? "PM" :"AM";
+    hours = hours % 12 || 12
+    hours= hours.toString().padStart(2,0);
+    const minutes =now.getMinutes().toString().padStart(2,0);
+    const seconds = now.getSeconds().toString().padStart(2,0);
+    const timeString =`${hours}:
+    ${minutes}:${seconds}:${meridiem}`;
+    document.getElementById("clock").textContent=timeString;
 
 }
 
-#clock-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+updateClock();
+setInterval(updateClock, 1000);
 
-#clock{
-    font-family: monospace;
-    font-size: 6.5rem;
-    font-weight: bold;
-    text-align: center;
-    color: blanchedalmond;
-    backdrop-filter: blur(5px);
-    width: 100%;
-}
