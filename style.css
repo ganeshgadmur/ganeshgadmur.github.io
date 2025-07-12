@@ -1,20 +1,20 @@
-/* Reset and Base */
+/* ===== Reset and Base ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #111;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e2a38, #243447);
+  color: #e0e0e0;
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Navigation Bar */
+/* ===== Navigation Bar ===== */
 nav {
-  background-color: #222;
+  background-color: #121d2f;
   padding: 12px 0;
   text-align: center;
 }
@@ -26,22 +26,22 @@ nav li {
   margin: 0 15px;
 }
 nav a {
-  color: white;
+  color: #00e1e1;
   text-decoration: none;
   font-weight: bold;
 }
 nav a:hover {
-  text-decoration: underline;
+  color: #00ffff;
 }
 
-/* Hero Section */
+/* ===== Hero Section ===== */
 header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
-  background-color: #e0e0e0;
+  background-color: #192533;
   text-align: center;
 }
 .profile-pic {
@@ -50,6 +50,7 @@ header {
   border-radius: 50%;
   margin: 15px;
   object-fit: cover;
+  border: 3px solid #00d1d1;
 }
 .intro {
   max-width: 500px;
@@ -58,9 +59,10 @@ header {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #4fc3f7;
 }
 
-/* Clock + Dark Mode */
+/* ===== Clock + Dark Mode ===== */
 .mode-clock {
   display: flex;
   gap: 15px;
@@ -69,32 +71,36 @@ header {
 }
 button {
   padding: 8px 16px;
-  background-color: #007bff;
-  color: white;
+  background-color: #00d1d1;
+  color: #000;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 button:hover {
-  background-color: #0056b3;
+  background-color: #00ffff;
+  box-shadow: 0 0 10px #00ffff;
 }
 #clock {
   font-weight: bold;
   padding: 8px 0;
 }
 
-/* About Section */
+/* ===== About Section ===== */
 #about {
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: #222e3c;
   text-align: center;
 }
 #about h2 {
   font-size: 28px;
+  color: #4fc3f7;
   margin-bottom: 10px;
 }
 
-/* Projects Section */
+/* ===== Projects Section ===== */
 #projects {
   padding: 40px 20px;
   background-color: #1e1e1e;
@@ -103,6 +109,7 @@ button:hover {
 }
 #projects h2 {
   font-size: 28px;
+  color: #4fc3f7;
   margin-bottom: 20px;
 }
 .project-grid {
@@ -112,57 +119,65 @@ button:hover {
   justify-content: center;
 }
 .project-card {
-  background: #1a1a2e;
-  padding: 1.2rem;
-  border-radius: 10px;
-  color: #eee;
+  background: #263445;
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #e0e0e0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 240, 240, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: #2f3f52;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 240, 240, 0.3);
+  border: 1px solid #00ffff;
 }
 .project-card h3 {
-    color: #00d1d1;
+  color: #00e1e1;
 }
 .project-card p {
   color: #ccc;
 }
 
-/* Contact Section */
+/* ===== Contact Section ===== */
 #contact {
   padding: 40px 20px;
-  background-color: #f5f5f5;
+  background-color: #222e3c;
   text-align: center;
 }
 #contact h2 {
   font-size: 28px;
+  color: #4fc3f7;
   margin-bottom: 15px;
 }
 #contact a {
-  color: #007bff;
+  color: #00e1e1;
   text-decoration: none;
 }
 #contact a:hover {
   text-decoration: underline;
 }
 
-/* Button (Project Links) */
+/* ===== Buttons ===== */
 .btn {
   display: inline-block;
   padding: 10px 20px;
   background: #00d1d1;
   color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 .btn:hover {
-  background: #008c8c;
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 12px #00ffff;
 }
 
-/* Dark Mode */
+/* ===== Dark Mode ===== */
 .dark-mode {
   background-color: #121212;
   color: #fff;
@@ -173,9 +188,7 @@ button:hover {
 .dark-mode header {
   background-color: #1e1e1e;
 }
-.dark-mode #about {
-  background-color: #1a1a1a;
-}
+.dark-mode #about,
 .dark-mode #contact {
   background-color: #1a1a1a;
 }
@@ -187,4 +200,18 @@ button:hover {
 }
 .dark-mode button:hover {
   background-color: #555;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .btn {
+    padding: 8px 16px;
+  }
+  .project-card {
+    margin-bottom: 1rem;
+  }
 }
