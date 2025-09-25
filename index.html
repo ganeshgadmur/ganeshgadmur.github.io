@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G Ganesh | Portfolio</title>
+  <title>Daniel Pauljcs | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
@@ -20,10 +20,10 @@
 
   <!-- Hero Section -->
   <header>
-    <img src="danielicon.jpg" class="profile-pic" alt="Danielpaul" />
+    <img src="danielicon.jpg" class="profile-pic" alt="Daniel Paul" />
     <div class="intro">
-      <h1 id="typing"></h1>
-      <p>Web Developer</p>
+      <h1 id="typing">Hi, I'm Daniel Pauljcs</h1>
+      <p>Full Stack Web Developer | MERN Stack Enthusiast</p>
       <div class="mode-clock">
         <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
         <div id="clock"></div>
@@ -32,45 +32,90 @@
   </header>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="about-section">
     <h2>About Me</h2>
-    <p>Hi! I'm Ganesh — a passionate web developer exploring JavaScript, React, and modern web technologies. I love creating responsive and user-friendly websites.</p>
+    <p>
+      Hi! I'm <strong>Daniel Pauljcs</strong>, a passionate Full-Stack Web Developer specializing in building responsive, secure, and dynamic applications using <strong>MERN Stack</strong>.  
+      I have hands-on experience in API integration, authentication systems, session management, and creating intuitive UI/UX.  
+    </p>
+    <p>
+      My goal is to build innovative and high-quality solutions that make a real impact. I continuously learn and adapt to new technologies to create efficient and scalable web applications.
+    </p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" class="projects-section">
     <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Digital Watch</h3>
-        <p>A simple real-time clock built with JavaScript.</p>
-        <a href="projects/digitalwatch/" class="btn" target="_blank">Try Digitalwatch</a>
-      </div>
-      <div class="project-card">
-        <h3>Stopwatch</h3>
-        <p>Start, stop, and reset a timer using JavaScript logic.</p>
-         <a href="projects/stopwatch/" class="btn" target="_blank">Try Stopwatch</a>
-      </div>
-       <div class="project-card">
-        <h3>Calculator</h3>
-        <p>A basic claculator using HTML,CSS,and JavaScript to perform arithmetic operations. </p>
-         <a href="projects/calculator/" class="btn" target="_blank">Try Calculator</a>
-      </div
-         <div class="project-card">
-        <h3>Weather App</h3>
-        <p> Displays Live weather using OpenWeatherApp API </p>
-       <a href="https://ganeshgadmur.github.io/Weather-App/" class="btn" target="_blank">View Project</a>
-      </div
+
+    <div class="project-card">
+      <h3>Fraud Job Detector – Web Application</h3>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js, Express.js, MongoDB</p>
+      <ul>
+        <li>Developed a platform to detect fraudulent job postings and companies.</li>
+        <li>Implemented URL verification, user reports, and security checks.</li>
+        <li>Integrated MongoDB for storing reports and verification data.</li>
+        <li>Designed a responsive interface for desktop and mobile.</li>
+      </ul>
+      <p><a href="#" target="_blank">Live Demo</a> | <a href="https://github.com/ganeshgadmur/fraud-job-detector" target="_blank">GitHub Repo</a></p>
     </div>
+
+    <div class="project-card">
+      <h3>Authentication System</h3>
+      <p><strong>Technologies:</strong> Node.js, Express.js, MongoDB</p>
+      <ul>
+        <li>Created a secure login/logout system using cookies & session management.</li>
+        <li>Implemented password encryption and session persistence.</li>
+        <li>Ensured secure authentication flow across all pages.</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Book Finder Web App</h3>
+      <p><strong>Technologies:</strong> React, Axios, Open Library API, Vite</p>
+      <ul>
+        <li>Built a responsive app to search and display books dynamically.</li>
+        <li>Created reusable React components with proper API integration.</li>
+        <li>Deployed on Vercel for live access.</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript, REST API</p>
+      <ul>
+        <li>Displays real-time weather updates based on user input.</li>
+        <li>Implemented responsive UI for desktop & mobile devices.</li>
+      </ul>
+      <a href="https://ganeshgadmur.github.io/Weather-App/" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Digital Watch</h3>
+      <p>A real-time clock built with JavaScript.</p>
+      <a href="projects/digitalwatch/" target="_blank" class="btn">Try Digital Watch</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Stopwatch</h3>
+      <p>Start, stop, and reset a timer using JavaScript.</p>
+      <a href="projects/stopwatch/" target="_blank" class="btn">Try Stopwatch</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Calculator</h3>
+      <p>A simple calculator to perform arithmetic operations.</p>
+      <a href="projects/calculator/" target="_blank" class="btn">Try Calculator</a>
+    </div>
+
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="contact-section">
     <h2>Contact Me</h2>
-    <p>Email: dannielsanjay@gmail.com</p>
-     <a href="resume.pdf" download>📄View Resume</a>
-    <p>LinkedIn :<a href ="https://www.linkedin.com/in/ganesh-gadmur-9908b021b" target="blank">linkedin.com/in/ganeshgadmurs</a></p>
-    <p>GitHub: <a href="https://github.com/ganeshgadmur" target="_blank">ganeshgadmur</a></p>
+    <p>Email: <a href="mailto:dannielsanjay@gmail.com">dannielsanjay@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ganesh-gadmur-9908b021b" target="_blank">linkedin.com/in/ganeshgadmur</a></p>
+    <p>GitHub: <a href="https://github.com/ganeshgadmur" target="_blank">github.com/ganeshgadmur</a></p>
+    <a href="resume.pdf" download class="btn">📄 View Resume</a>
   </section>
 
 </body>
