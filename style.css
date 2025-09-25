@@ -142,12 +142,12 @@ header p {
 }
 
 .project-card {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.1 );
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
-  color: #333;
+  color: white;
 }
 
 .project-card:hover {
@@ -280,6 +280,7 @@ header p {
     margin: 10px 0;
   }
 }
+
 
 
 
