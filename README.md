@@ -22,13 +22,21 @@ Other Skills: REST API Integration, CRUD Operations, Authentication (Cookies, Se
 Here are some projects I have built:
 
 1.Fraud Job Detector – A web application to detect scam job postings and verify company authenticity using URL analysis and user reports.
+
 2.Digital Watch – Real-time clock using JavaScript.
+
 3.Stopwatch – Timer with start, stop, and reset functionality.
+
 4.Calculator – Basic arithmetic calculator using HTML, CSS, and JavaScript.
+
 5.Number Guessing Game – Interactive game using JavaScript logic.
+
 6.Dice Roll Program – Simulates dice rolling using random number generation.
+
 7.Authentication System – Login/logout system with cookies & session management.
+
 8.Book Finder Web App – React-based app with Open Library API integration.
+
 9.Weather App – Live weather updates using OpenWeatherMap API.
 
 🌐 Live Website
