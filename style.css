@@ -105,7 +105,7 @@ header p {
 /* About Section */
 .about-section {
   padding: 60px 20px;
-  background: rgba(0, 0, 0, 0.6);
+  background: none;;
   text-align: center;
   color: white;
 }
@@ -124,7 +124,7 @@ header p {
 /* Projects Section */
 .projects-section {
   padding: 60px 20px;
-  background: rgba(0, 0, 0, 0.6);
+  background: none;;
   color: white;
 }
 
@@ -197,7 +197,7 @@ header p {
 .skills-section {
   padding: 50px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6); /* overlay for readability */
+  background: none; /* overlay for readability */
 }
 
 .skills-section h2 {
@@ -237,7 +237,7 @@ header p {
 /* Contact Section */
 .contact-section {
   padding: 60px 20px;
-  background: rgba(0, 0, 0, 0.6);
+  background:none;
   text-align: center;
   color: white;
 }
@@ -280,6 +280,7 @@ header p {
     margin: 10px 0;
   }
 }
+
 
 
 
