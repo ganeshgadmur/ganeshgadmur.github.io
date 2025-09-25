@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
   background: url('ai_computer.jpg') no-repeat center center fixed;
   background-size: cover;
-  color:white ;
+  color: white;
   position: relative;
 }
 
@@ -24,15 +24,17 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.7); /* stronger overlay for clarity */
   z-index: -1;
 }
 
 /* Navigation */
 nav {
   background-color: rgba(44, 62, 80, 0.9);
-  padding: 15px;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav ul {
@@ -42,7 +44,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 nav ul li a {
@@ -61,31 +63,33 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, rgba(26, 188, 156, 0.8), rgba(22, 160, 133, 0.8));
+  padding: 30px 20px;
+  background: rgba(26, 188, 156, 0.8);
   color: white;
   text-align: center;
+  border-radius: 10px;
+  margin: 20px;
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 4px solid white;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 header p {
-  font-size: 1.2rem;
-  margin-top: 10px;
+  font-size: 1rem;
+  margin-top: 5px;
 }
 
 .mode-clock {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .mode-clock button {
@@ -103,25 +107,20 @@ header p {
   color: white;
 }
 
-/* Section Styles */
-.about-section,
-.projects-section,
-.skills-section,
-.contact-section {
-  padding: 60px 20px;
-  color: white;
-  background: none; /* allow background image to show */
-  text-align: center;
+/* Section Containers */
+section {
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
-/* Section Headings */
-.about-section h2,
-.projects-section h2,
-.skills-section h2,
-.contact-section h2 {
+/* Section Titles */
+section h2 {
   font-size: 2.5rem;
+  text-align: center;
   margin-bottom: 20px;
-  color: white;
+  color: #ffd700;
 }
 
 /* About Section */
@@ -132,43 +131,40 @@ header p {
 }
 
 /* Projects Section */
-.projects-section {
-  padding-top: 60px 20px;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-}
-
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 20px;
+  gap: 25px;
 }
 
 .project-card {
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent dark card */
+  background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease-in-out;
-  color:white;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
 }
 
-.project-card h3,
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
 .project-card p,
+.project-card ul,
 .project-card li {
+  font-size: 1rem;
   color: white;
 }
 
 .project-card ul {
   list-style-type: disc;
   padding-left: 20px;
-  margin-bottom: 10px;
-  color: #333;
 }
 
 .project-card a.btn {
@@ -179,7 +175,6 @@ header p {
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
 }
 
 .project-card a.btn:hover {
@@ -187,10 +182,6 @@ header p {
 }
 
 /* Skills Section */
-.skills-section {
-  padding: 50px;
-}
-
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -199,16 +190,11 @@ header p {
 }
 
 .skill-card {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 12px;
   width: 220px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
 }
 
 .skill-card h3 {
@@ -222,7 +208,7 @@ header p {
 
 /* Contact Section */
 .contact-section {
-  padding: 60px 20px;
+  text-align: center;
 }
 
 .contact-section a {
@@ -235,7 +221,6 @@ header p {
   text-decoration: underline;
 }
 
-/* Buttons */
 .btn {
   padding: 8px 15px;
   background: #1abc9c;
@@ -258,7 +243,12 @@ header p {
   nav ul li {
     margin: 10px 0;
   }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
 }
-
-
-
