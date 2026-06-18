@@ -130,6 +130,51 @@ section h2 {
   font-size: 1.1rem;
 }
 
+
+
+/* Education Section */
+.education-card {
+  max-width: 800px;
+  margin: 15px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 5px solid #ffd700;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.education-card h3 {
+  color: #ffd700;
+  margin-bottom: 8px;
+}
+
+.education-card p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Certifications Section */
+#certifications ul {
+  max-width: 700px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+#certifications li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #1abc9c;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+#certifications li:hover {
+  transform: translateX(5px);
+}
+
 /* Projects Section */
 .project-grid {
   display: grid;
