@@ -367,6 +367,8 @@ section h2::after {
 
 .btn:hover {
   background: #1d4ed8;
+   transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(37, 99, 235, 0.25);
 }
 
 
