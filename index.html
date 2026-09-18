@@ -1,198 +1,550 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G Ganesh | Portfolio</title>
+
+  <title>G Ganesh | Java Full Stack Developer</title>
+
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
+
 <body>
 
-  <!-- Navigation -->
+  <!-- ================================
+       NAVIGATION
+  ================================= -->
+
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section -->
+
+  <!-- ================================
+       HERO SECTION
+  ================================= -->
+
   <header>
-    <img src="G Ganesh.jpeg" class="profile-pic" alt="Ganesh" />
+
+    <img
+      src="G Ganesh.jpeg"
+      class="profile-pic"
+      alt="G Ganesh"
+    />
+
     <div class="intro">
+
       <h1 id="typing"></h1>
-      <p>Full Stack Web Developer | MERN Stack Enthusiast</p>
-      <a href="G_GaneshResume.pdf" target="_blank" class="resume-btn">📄 View Resume</a>
-      <a href="G_GaneshResume.pdf" download class="resume-btn">⬇️ Download Resume</a>
+
+      <p>
+        Java Full Stack Developer
+      </p>
+
+      <p class="hero-stack">
+        Java • Spring Boot • SQL • REST APIs • HTML • CSS
+      </p>
+
+      <div class="hero-buttons">
+
+        <a
+          href="G_GaneshResume.pdf"
+          target="_blank"
+          class="resume-btn"
+        >
+          View Resume
+        </a>
+
+        <a
+          href="G_GaneshResume.pdf"
+          download
+          class="resume-btn secondary-btn"
+        >
+          Download Resume
+        </a>
+
+      </div>
 
       <div class="mode-clock">
         <div id="clock"></div>
       </div>
+
     </div>
+
   </header>
 
-  <!-- About Section -->
-<section id="about" class="about-section">
-  <h2>About Me</h2>
 
-  <p>
-    <strong>G Ganesh</strong> is a passionate Java Full Stack Developer with hands-on experience in developing responsive and database-driven web applications using Java, Spring Boot, MySQL, React, HTML, CSS, JavaScript, and Bootstrap.
-  </p>
-  <p>
-    Skilled in building REST APIs, implementing authentication systems, integrating databases, and developing user-friendly interfaces. Experienced in creating full-stack projects that solve real-world problems through clean, efficient, and scalable solutions.
-  </p>
-  <p>
-    Continuously learning new technologies and best practices to build high-quality software and contribute effectively to modern web development teams.
-  </p>
-</section>
+  <!-- ================================
+       ABOUT
+  ================================= -->
+
+  <section id="about" class="about-section">
+
+    <h2>About Me</h2>
+
+    <p>
+      I am a Java Full Stack Developer focused on building
+      backend applications and database-driven web applications
+      using Java, Spring Boot, SQL, and REST APIs.
+    </p>
+
+    <p>
+      I have worked on projects involving CRUD operations,
+      database integration, API development, form validation,
+      and responsive web interfaces using HTML and CSS.
+    </p>
+
+    <p>
+      I am continuously improving my Java, Spring Boot, SQL,
+      and Data Structures & Algorithms skills while building
+      practical projects and preparing for software development roles.
+    </p>
+
+  </section>
+
+
+  <!-- ================================
+       SKILLS
+  ================================= -->
+
+  <section id="skills" class="skills-section">
+
+    <h2>Technical Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>Backend</h3>
+        <p>
+          Java, Spring Boot, REST APIs,
+          JPA, Spring Data
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Database</h3>
+        <p>
+          SQL, MySQL
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Frontend</h3>
+        <p>
+          HTML5, CSS3, JavaScript,
+          React
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <p>
+          Java, Object-Oriented Programming,
+          Data Structures & Algorithms
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <p>
+          Git, GitHub, Postman,
+          STS, VS Code
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Deployment</h3>
+        <p>
+          Railway
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================================
+       EDUCATION
+  ================================= -->
 
   <section id="education" class="education-section">
-  <h2>Education</h2>
 
-  <div class="education-card">
-    <h3>B.Tech – Computer Science & Engineering</h3>
-    <p>Aurora's Technological & Research Institute</p>
-  </div>
+    <h2>Education</h2>
 
-  <div class="education-card">
-    <h3>Diploma – Mechanical Engineering</h3>
-    <p>Jayaprakash Narayana Education Society</p>
-  </div>
-</section>
-  
-  <!-- Skills Section -->
- <section id="skills" class="skills-section">
-  <h2>Technical Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>Frontend</h3>
-      <p>HTML5, CSS3, JavaScript (ES6+), React, JSX</p>
-    </div>
-    <div class="skill-card">
-      <h3>Backend</h3>
-      <p>Java Full Stack Developer |Spring Boot |React |MySQL <p>
+    <div class="education-card">
+
+      <h3>B.Tech – Computer Science & Engineering</h3>
+
+      <p>
+        Aurora's Technological & Research Institute
+      </p>
+
+      <p>
+        2022
+      </p>
 
     </div>
-    <div class="skill-card">
-  <h3>Programming</h3>
-  <p>Java, JavaScript, Data Structures & Algorithms</p>
-</div>
-    <div class="skill-card">
-      <h3>Tools & Deployment</h3>
-      <p>Git, GitHub, Vercel, Postman</p>
+
+
+    <div class="education-card">
+
+      <h3>Diploma – Mechanical Engineering</h3>
+
+      <p>
+        Jayaprakash Narayana Education Society
+      </p>
+
+      <p>
+        2018
+      </p>
+
     </div>
-  </div>
-</section>
-<section id="certifications">
-  <h2>Certifications</h2>
 
-  <ul>
-    <li>Java Training – iSoft</li>
-    <li>React Development Training</li>
-    <li>Spring Boot Development</li>
-  </ul>
-</section>
+  </section>
 
-  <!-- Projects Section -->
+
+  <!-- ================================
+       CERTIFICATIONS
+  ================================= -->
+
+  <section id="certifications">
+
+    <h2>Training & Certifications</h2>
+
+    <ul>
+
+      <li>
+        Java Training – iSoft
+      </li>
+
+      <li>
+        React Development Training
+      </li>
+
+      <li>
+        Spring Boot Development
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- ================================
+       PROJECTS
+  ================================= -->
+
   <section id="projects" class="projects-section">
+
     <h2>Projects</h2>
 
+
+    <!-- Fraud Job Detector -->
+
     <div class="project-card">
-       <h3>Fraud Job Detector – Web Application</h3>
 
-  <p><strong>Technologies:</strong> Java, Spring Boot, MySQL, Thymeleaf, Bootstrap, HTML, CSS, JavaScript</p>
+      <h3>Fraud Job Detector</h3>
 
-  <ul>
-    <li>Developed a web application to identify potentially fraudulent job postings and companies.</li>
-    <li>Implemented company and job verification features to help job seekers avoid scams.</li>
-    <li>Built a secure backend using Spring Boot and integrated MySQL for data storage.</li>
-    <li>Designed responsive user interfaces using Thymeleaf, Bootstrap, HTML, CSS, and JavaScript.</li>
-    <li>Implemented CRUD operations and form validation for managing job and company records.</li>
-  </ul>
-      <p><a href="#" target="_blank">Live Demo</a> | <a href="https://github.com/ganeshgadmur/fraud-job-detector" target="_blank">GitHub Repo</a></p>
+      <p>
+        <strong>Technologies:</strong>
+        Java, Spring Boot, MySQL, JPA,
+        Thymeleaf, Bootstrap, HTML, CSS
+      </p>
+
+      <ul>
+
+        <li>
+          Developed a web application for analyzing
+          potentially fraudulent job postings.
+        </li>
+
+        <li>
+          Implemented URL and job-description checks
+          to identify common scam indicators.
+        </li>
+
+        <li>
+          Built REST APIs and CRUD operations using
+          Spring Boot and JPA.
+        </li>
+
+        <li>
+          Integrated MySQL for storing job and
+          fraud-report information.
+        </li>
+
+        <li>
+          Created a web interface using Thymeleaf,
+          Bootstrap, HTML, and CSS.
+        </li>
+
+      </ul>
+
+      <p class="project-links">
+
+        <a
+          href="https://github.com/ganeshgadmur/fraud-job-detector"
+          target="_blank"
+          class="btn"
+        >
+          GitHub
+        </a>
+
+      </p>
+
     </div>
 
-   <div class="project-card">
-  <h3>Health Alert – Smart Health Assistant</h3>
-  <p><strong>Technologies:</strong>Java, React, Spring Boot, MySQL</p>
-  <ul>
-    <li>Built a full-stack healthcare awareness application.</li>
-    <li>Implemented symptom-based disease prediction.</li>
-    <li>Developed health risk assessment and report analysis.</li>
-    <li>Generated downloadable PDF health reports.</li>
-    <li>Provided disease explanations, precautions, and food recommendations.</li>
-    <li>Integrated REST APIs between React frontend and Spring Boot backend.</li>
-  </ul>
 
-  <p>
-    <a href="#" target="_blank">Live Demo</a> |
-    <a href="#" target="_blank">GitHub Repo</a>
-  </p>
-</div>
+    <!-- Health Alert -->
 
     <div class="project-card">
+
+      <h3>Health Alert – Smart Health Assistant</h3>
+
+      <p>
+        <strong>Technologies:</strong>
+        Java, Spring Boot, MySQL, JPA,
+        React, HTML, CSS
+      </p>
+
+      <ul>
+
+        <li>
+          Developed a health-awareness application
+          with a Spring Boot backend.
+        </li>
+
+        <li>
+          Implemented symptom-based health risk
+          assessment.
+        </li>
+
+        <li>
+          Added disease information, precautions,
+          and food recommendations.
+        </li>
+
+        <li>
+          Implemented report analysis and
+          downloadable PDF reports.
+        </li>
+
+        <li>
+          Integrated REST APIs between the frontend
+          and Spring Boot backend.
+        </li>
+
+      </ul>
+
+      <p class="project-links">
+
+        <!-- Add your real GitHub URL when ready -->
+
+        <a
+          href="#"
+          class="btn"
+        >
+          GitHub
+        </a>
+
+      </p>
+
+    </div>
+
+
+    <!-- Book Finder -->
+
+    <div class="project-card">
+
       <h3>Book Finder Web App</h3>
-      <p><strong>Technologies:</strong> React, Axios, Open Library API, Vite</p>
+
+      <p>
+        <strong>Technologies:</strong>
+        React, Axios, Open Library API, Vite
+      </p>
+
       <ul>
-        <li>Built a responsive app to search and display books dynamically.</li>
-        <li>Created reusable React components with proper API integration.</li>
-        <li>Deployed on Vercel for live access.</li>
+
+        <li>
+          Built a web application to search
+          and display books using an external API.
+        </li>
+
+        <li>
+          Created reusable React components
+          for displaying book information.
+        </li>
+
       </ul>
+
     </div>
 
+
+    <!-- Weather App -->
+
     <div class="project-card">
+
       <h3>Weather App</h3>
-      <p><strong>Technologies:</strong> HTML, CSS, JavaScript, REST API</p>
+
+      <p>
+        <strong>Technologies:</strong>
+        HTML, CSS, JavaScript, REST API
+      </p>
+
       <ul>
-        <li>Displays real-time weather updates based on user input.</li>
-        <li>Implemented responsive UI for desktop & mobile devices.</li>
+
+        <li>
+          Displays weather information based
+          on user input.
+        </li>
+
+        <li>
+          Implemented a responsive interface
+          for desktop and mobile devices.
+        </li>
+
       </ul>
-      <a href="https://ganeshgadmur.github.io/Weather-App/" target="_blank" class="btn">View Project</a>
+
+      <a
+        href="https://ganeshgadmur.github.io/Weather-App/"
+        target="_blank"
+        class="btn"
+      >
+        View Project
+      </a>
+
     </div>
 
+
+    <!-- Smaller Projects -->
+
     <div class="project-card">
+
       <h3>Digital Watch</h3>
-      <p>A real-time clock built with JavaScript.</p>
-      <a href="projects/digitalwatch/" target="_blank" class="btn">Try Digital Watch</a>
+
+      <p>
+        Real-time digital clock built using JavaScript.
+      </p>
+
+      <a
+        href="projects/digitalwatch/"
+        target="_blank"
+        class="btn"
+      >
+        View Project
+      </a>
+
     </div>
 
+
     <div class="project-card">
+
       <h3>Stopwatch</h3>
-      <p>Start, stop, and reset a timer using JavaScript.</p>
-      <a href="projects/stopwatch/" target="_blank" class="btn">Try Stopwatch</a>
+
+      <p>
+        JavaScript-based stopwatch with
+        start, stop, and reset functionality.
+      </p>
+
+      <a
+        href="projects/stopwatch/"
+        target="_blank"
+        class="btn"
+      >
+        View Project
+      </a>
+
     </div>
+
 
     <div class="project-card">
+
       <h3>Calculator</h3>
-      <p>A simple calculator to perform arithmetic operations.</p>
-      <a href="projects/calculator/" target="_blank" class="btn">Try Calculator</a>
+
+      <p>
+        Simple web calculator for
+        basic arithmetic operations.
+      </p>
+
+      <a
+        href="projects/calculator/"
+        target="_blank"
+        class="btn"
+      >
+        View Project
+      </a>
+
     </div>
 
   </section>
 
-  <!-- Contact Section -->
+
+  <!-- ================================
+       CONTACT
+  ================================= -->
+
   <section id="contact" class="contact-section">
+
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:ganeshgadmur@gmail.com">ganeshgadmur@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ganesh-gadmur-9908b021b" target="_blank">linkedin.com/in/ganeshgadmur</a></p>
-    <p>GitHub: <a href="https://github.com/ganeshgadmur" target="_blank">github.com/ganeshgadmur</a></p>
-    <a href="G_GaneshResume.pdf" download class="btn-resume" target="_blank">📄 view Resume</a>
-    <a href="G_GaneshResume.pdf" target="_blank" class="btn-resume">📄 Download Resume</a>
+
+    <p>
+      Email:
+      <a href="mailto:ganeshgadmur@gmail.com">
+        ganeshgadmur@gmail.com
+      </a>
+    </p>
+
+    <p>
+      LinkedIn:
+      <a
+        href="https://www.linkedin.com/in/ganesh-gadmur-9908b021b"
+        target="_blank"
+      >
+        LinkedIn Profile
+      </a>
+    </p>
+
+    <p>
+      GitHub:
+      <a
+        href="https://github.com/ganeshgadmur"
+        target="_blank"
+      >
+        GitHub Profile
+      </a>
+    </p>
+
+    <div class="contact-buttons">
+
+      <a
+        href="G_GaneshResume.pdf"
+        target="_blank"
+        class="btn"
+      >
+        View Resume
+      </a>
+
+      <a
+        href="G_GaneshResume.pdf"
+        download
+        class="btn"
+      >
+        Download Resume
+      </a>
+
+    </div>
+
   </section>
+
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
+```
